@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenKakutou</title>
+<meta name="description" content="OpenKakutou — open-source MUGEN/Ikemen GO-compatible fighting game tools: viewers, editors, and playable games.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0f1115;
+    --bg-card: #171a21;
+    --border: #2a2e38;
+    --text: #e8e9ec;
+    --text-dim: #9aa0ac;
+    --accent: #ff5a5f;
+    --accent-dim: #7a2d2f;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f7f8;
+      --bg-card: #ffffff;
+      --border: #e2e3e7;
+      --text: #1b1d22;
+      --text-dim: #5b606c;
+      --accent: #d6363c;
+      --accent-dim: #f6d6d7;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+  h1 {
+    font-size: 2.25rem;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  header p {
+    color: var(--text-dim);
+    font-size: 1.05rem;
+    margin: 0;
+    max-width: 60ch;
+  }
+  h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin: 2.5rem 0 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    display: block;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease;
+  }
+  a.card:hover {
+    border-color: var(--accent);
+  }
+  .card.disabled {
+    opacity: 0.55;
+    cursor: default;
+  }
+  .card .kind {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+  }
+  .card h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.05rem;
+  }
+  .card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+  }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+  footer a {
+    color: inherit;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>OpenKakutou</h1>
+    <p>Open-source tools for MUGEN/Ikemen GO-compatible fighting games — viewers, editors, and playable games, all in the browser.</p>
+  </header>
+
+  <h2>Live now</h2>
+  <div class="grid">
+    <a class="card" href="https://openkakutou.github.io/character-viewer-web/">
+      <span class="kind">Viewer</span>
+      <h3>Character Viewer</h3>
+      <p>Browse a character's sprites, palettes, and animations, and trigger moves live.</p>
+    </a>
+    <a class="card" href="https://openkakutou.github.io/stage-viewer-web/">
+      <span class="kind">Viewer</span>
+      <h3>Stage Viewer</h3>
+      <p>Visualize a stage: layers, parallax, and animated backgrounds.</p>
+    </a>
+    <a class="card" href="https://openkakutou.github.io/lifebar-viewer-web/">
+      <span class="kind">Viewer</span>
+      <h3>Lifebar Viewer</h3>
+      <p>Preview a lifebar with live value simulation.</p>
+    </a>
+  </div>
+
+  <h2>In development</h2>
+  <div class="grid">
+    <div class="card disabled">
+      <span class="kind">Editor</span>
+      <h3>Character Editor</h3>
+      <p>Create and modify characters.</p>
+    </div>
+    <div class="card disabled">
+      <span class="kind">Editor</span>
+      <h3>Stage Editor</h3>
+      <p>Create and modify stages.</p>
+    </div>
+    <div class="card disabled">
+      <span class="kind">Editor</span>
+      <h3>Lifebar Editor</h3>
+      <p>Create and modify lifebars.</p>
+    </div>
+    <div class="card disabled">
+      <span class="kind">Game</span>
+      <h3>Quick Versus</h3>
+      <p>Standard two-player versus match — the first complete playable game.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>All source on <a href="https://github.com/openkakutou">github.com/openkakutou</a>. This page will grow as more apps ship.</p>
+  </footer>
+</main>
+</body>
+</html>
