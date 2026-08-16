@@ -100,6 +100,31 @@
     font-size: 0.9rem;
     color: var(--text-dim);
   }
+  .platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.7rem;
+  }
+  .platform {
+    font-size: 0.72rem;
+    line-height: 1;
+    padding: 0.3rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    text-decoration: none;
+  }
+  a.platform {
+    color: var(--accent);
+    border-color: var(--accent-dim);
+  }
+  a.platform:hover {
+    background: var(--accent-dim);
+  }
+  .platform.pending {
+    opacity: 0.6;
+  }
   footer {
     margin-top: 4rem;
     padding-top: 1.5rem;
@@ -136,25 +161,43 @@
       <h3>Lifebar Viewer</h3>
       <p>Preview a lifebar with live value simulation.</p>
     </a>
+    <div class="card">
+      <span class="kind">Editor</span>
+      <h3>Character Editor</h3>
+      <p>Create and modify characters. Early-stage — most editing screens are still in development.</p>
+      <div class="platforms">
+        <a class="platform" href="https://openkakutou.github.io/character-editor/">Web</a>
+        <span class="platform pending">Windows</span>
+        <span class="platform pending">Mac</span>
+        <span class="platform pending">Linux</span>
+      </div>
+    </div>
+    <div class="card">
+      <span class="kind">Editor</span>
+      <h3>Stage Editor</h3>
+      <p>Create and modify stages. Early-stage — most editing screens are still in development.</p>
+      <div class="platforms">
+        <a class="platform" href="https://openkakutou.github.io/stage-editor/">Web</a>
+        <span class="platform pending">Windows</span>
+        <span class="platform pending">Mac</span>
+        <span class="platform pending">Linux</span>
+      </div>
+    </div>
+    <div class="card">
+      <span class="kind">Editor</span>
+      <h3>Lifebar Editor</h3>
+      <p>Create and modify lifebars. Early-stage — most editing screens are still in development.</p>
+      <div class="platforms">
+        <a class="platform" href="https://openkakutou.github.io/lifebar-editor/">Web</a>
+        <span class="platform pending">Windows</span>
+        <span class="platform pending">Mac</span>
+        <span class="platform pending">Linux</span>
+      </div>
+    </div>
   </div>
 
   <h2>In development</h2>
   <div class="grid">
-    <div class="card disabled">
-      <span class="kind">Editor</span>
-      <h3>Character Editor</h3>
-      <p>Create and modify characters.</p>
-    </div>
-    <div class="card disabled">
-      <span class="kind">Editor</span>
-      <h3>Stage Editor</h3>
-      <p>Create and modify stages.</p>
-    </div>
-    <div class="card disabled">
-      <span class="kind">Editor</span>
-      <h3>Lifebar Editor</h3>
-      <p>Create and modify lifebars.</p>
-    </div>
     <div class="card disabled">
       <span class="kind">Game</span>
       <h3>Quick Versus</h3>
