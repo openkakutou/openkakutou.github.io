@@ -2,7 +2,7 @@
 
 Public showcase site for [OpenKakutou](https://github.com/openkakutou): lists and links out to whichever viewer, editor, and complete game apps are currently live. Published at [openkakutou.github.io](https://openkakutou.github.io/) via GitHub's special user/organization-site repo name — no build step, no CI, `index.html` on `main` is the deployed page.
 
-Doesn't host or reimplement any app's own functionality — each app (`character-viewer-web`, `stage-editor`, `mode-quick-versus`, …) keeps its own deployment. This repo is a discovery layer on top.
+Doesn't host or reimplement any app's own functionality — each app (`character-viewer-web`, `stage-editor`, `game`, …) keeps its own deployment. This repo is a discovery layer on top.
 
 ## Editing
 
